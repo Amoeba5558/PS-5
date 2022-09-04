@@ -1,0 +1,29 @@
+-- Creating a table:
+
+CREATE TABLE NewsLetter (
+    id int(10) ,
+    name varchar(255),
+    email varchar(255)
+);
+
+INSERT INTO `NewsLetter` (`id`, `name`, `email`) VALUES
+(1, 'John', 'JohnSmith26@gmail.com'),
+(2, 'Donna', 'Donna24Hubber@gmail.com'),
+(3, 'Peter', 'peterParker82@gmail.com'),
+``````````````````````````````````  [Not added line 14 and 15]
+(4, 'Tom', 'TomMuddy32@gmail.com'),
+(5, 'Lisa', 'Lisa26Ray@gmail.com');
+
+```````````````````
+
+-- Indexes for table `NewsLetter`
+
+ALTER TABLE `NewsLetter`
+  ADD PRIMARY KEY (`id`);
+
+
+-- AUTO_INCREMENT for table `NewsLetter`
+
+ALTER TABLE `NewsLetter`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  
